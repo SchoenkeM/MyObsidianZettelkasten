@@ -16,8 +16,8 @@
 /* ── Grid ────────────────────────────────────────────────── */
 .stundenplan-grid {
   display: grid;
-  /* col1 = 1fr  (time), col2-6 = 4fr each */
-  grid-template-columns: 1fr 4fr 4fr 4fr 4fr 4fr;
+  /* col1 = 1.8fr (time range), col2-6 = 4fr each */
+  grid-template-columns: 1.8fr 4fr 4fr 4fr 4fr 4fr;
   grid-template-rows: 5fr repeat(12, 4fr);  /* row1 slightly taller */
   border: 1px solid #888;
   flex: 1;

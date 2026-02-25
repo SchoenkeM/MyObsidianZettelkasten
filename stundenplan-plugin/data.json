@@ -1,108 +1,28 @@
 {
   "cards": {
-    "mm0cgn6nmj3z1grwdfh": {
-      "id": "mm0cgn6nmj3z1grwdfh",
-      "col": 2,
-      "topRowFrac": 1,
-      "heightFrac": 3,
-      "text": "U-Net Paper Peter",
-      "color": "#e0bbff"
-    },
-    "mm0ciav0t2r0yqc20n": {
-      "id": "mm0ciav0t2r0yqc20n",
-      "col": 2,
-      "topRowFrac": 4,
-      "heightFrac": 3,
-      "text": "Zahnarzt",
-      "color": "#cfcfcf"
-    },
-    "mm0cipz6fns13bw434j": {
-      "id": "mm0cipz6fns13bw434j",
-      "col": 2,
-      "topRowFrac": 7,
-      "heightFrac": 2,
-      "text": "U-Net Paper Peter",
-      "color": "#e0bbff"
-    },
-    "mm0cjb9v37zfvpya7y4": {
-      "id": "mm0cjb9v37zfvpya7y4",
-      "col": 2,
-      "topRowFrac": 9,
-      "heightFrac": 2,
-      "text": "Purency Paper Jani",
-      "color": "#a8d8ea"
-    },
-    "mm0ctq1zz9ufgz3r8u": {
-      "id": "mm0ctq1zz9ufgz3r8u",
+    "mm1qpy4vbw0bpqjtxrn": {
+      "id": "mm1qpy4vbw0bpqjtxrn",
       "col": 3,
       "topRowFrac": 1,
-      "heightFrac": 4,
-      "text": "Purency Paper Jani",
-      "color": "#a8d8ea"
+      "heightFrac": 1,
+      "text": "Dev- WarmUp",
+      "color": "#caffbf"
     },
-    "mm0cu84ap20ed9ueh3a": {
-      "id": "mm0cu84ap20ed9ueh3a",
-      "col": 5,
-      "topRowFrac": 8,
-      "heightFrac": 2,
-      "text": "Erik Regler Lager",
-      "color": "#cfcfcf"
-    },
-    "mm0cvx4y4zehbkk9ocm": {
-      "id": "mm0cvx4y4zehbkk9ocm",
+    "mm1qrk9evrqma7jm4c": {
+      "id": "mm1qrk9evrqma7jm4c",
       "col": 3,
-      "topRowFrac": 5,
-      "heightFrac": 2,
-      "text": "Mittagspause",
-      "color": "#fdffb6"
-    },
-    "mm0cwb7vpf5tchlq9n": {
-      "id": "mm0cwb7vpf5tchlq9n",
-      "col": 4,
-      "topRowFrac": 5,
-      "heightFrac": 2,
-      "text": "Mittagspause",
-      "color": "#fdffb6"
-    },
-    "mm0cwdyk9hmef1tvftb": {
-      "id": "mm0cwdyk9hmef1tvftb",
-      "col": 5,
-      "topRowFrac": 5,
-      "heightFrac": 2,
-      "text": "Mittagspause",
-      "color": "#fdffb6"
-    },
-    "mm0cwhc8eqd6gwijmzj": {
-      "id": "mm0cwhc8eqd6gwijmzj",
-      "col": 1,
-      "topRowFrac": 5,
-      "heightFrac": 2,
-      "text": "Mittagspause",
-      "color": "#fdffb6"
-    },
-    "mm0cx3qn0zdp5h3bcyf": {
-      "id": "mm0cx3qn0zdp5h3bcyf",
-      "col": 3,
-      "topRowFrac": 7,
-      "heightFrac": 2,
-      "text": "U-Net Paper Peter",
+      "topRowFrac": 2,
+      "heightFrac": 2.5,
+      "text": "Unity - Paper Discussion Writing",
       "color": "#e0bbff"
     },
-    "mm0cx6veqqv106m9qlc": {
-      "id": "mm0cx6veqqv106m9qlc",
+    "mm1qtt9rp4c461g6bv": {
+      "id": "mm1qtt9rp4c461g6bv",
       "col": 3,
-      "topRowFrac": 9,
-      "heightFrac": 2,
-      "text": "Benchmark Planning",
-      "color": "#caffbf"
-    },
-    "mm0shgq8sxusgix9n2i": {
-      "id": "mm0shgq8sxusgix9n2i",
-      "col": 4,
-      "topRowFrac": 8,
-      "heightFrac": 2,
-      "text": "Benchmark Planning",
-      "color": "#caffbf"
+      "topRowFrac": 4.5,
+      "heightFrac": 1.5,
+      "text": "Mittag",
+      "color": "#fdffb6"
     }
   }
 }

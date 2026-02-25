@@ -95,7 +95,9 @@ class StundenplanView extends ItemView {
         else if (col === 0) {
           cell.classList.add("time-cell");
           const hour = HOURS[row - 1];
-          cell.textContent = hour + ":00";
+          const nextHour = HOURS[row];   // undefined for last row → "19:00"
+          const end = nextHour !== undefined ? nextHour : hour + 1;
+          cell.textContent = `${hour}:00 – ${end}:00`;
         }
         // ── Content cells ──
         else {
@@ -234,7 +236,10 @@ class StundenplanView extends ItemView {
         if (moved) {
           this._snapCardToGrid(card.id, el);
         } else {
-          this._toggleActive(card.id);
+          // Single click: activate AND open text editor immediately
+          this.activeCardId = card.id;
+          this._updateActiveVisual();
+          this._editCard(card.id);
         }
       };
 
