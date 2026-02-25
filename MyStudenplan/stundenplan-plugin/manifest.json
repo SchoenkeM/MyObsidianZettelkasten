@@ -1,0 +1,10 @@
+{
+  "id": "stundenplan",
+  "name": "Stundenplan",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Ein klassischer Stundenplan mit Karten – ähnlich wie Google Kalender.",
+  "author": "Custom Plugin",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}

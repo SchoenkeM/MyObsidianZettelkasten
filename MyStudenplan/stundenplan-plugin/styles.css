@@ -1,0 +1,168 @@
+/* ============================================================
+   STUNDENPLAN PLUGIN – styles.css
+   ============================================================ */
+
+.stundenplan-view {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: auto;
+  background: #fff;
+  font-family: var(--font-interface);
+}
+
+/* ── Grid ────────────────────────────────────────────────── */
+.stundenplan-grid {
+  display: grid;
+  /* col1 = 1fr  (time), col2-6 = 4fr each */
+  grid-template-columns: 1fr 4fr 4fr 4fr 4fr 4fr;
+  grid-template-rows: 5fr repeat(12, 4fr);  /* row1 slightly taller */
+  border: 1px solid #888;
+  flex: 1;
+  min-height: 600px;
+  position: relative;
+}
+
+/* ── Cells ───────────────────────────────────────────────── */
+.stundenplan-cell {
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Header row */
+.stundenplan-cell.header {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1em;
+  border-bottom: 3px solid #000;
+}
+
+/* Day column separators – thick black right border */
+.stundenplan-cell.day-header {
+  border-right: 3px solid #000;
+}
+.stundenplan-cell.day-col {
+  border-right: 3px solid #000;
+}
+
+/* Time column */
+.stundenplan-cell.time-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.85em;
+  background: #fafafa;
+  border-right: 2px solid #555;
+}
+
+/* Alternating row backgrounds (every 2 rows = 2 hours) */
+/* Rows 2–3 (index 1–2): white  */
+/* Rows 4–5 (index 3–4): light grey */
+.stundenplan-cell.row-even { background-color: #fff; }
+.stundenplan-cell.row-odd  { background-color: #f4f4f4; }
+
+/* Thicker horizontal lines every 2 rows */
+.stundenplan-cell.thick-top {
+  border-top: 5px solid #888 !important;
+}
+.stundenplan-cell.thin-top {
+  border-top: 3px solid #bbb !important;
+}
+
+/* ── Cards ───────────────────────────────────────────────── */
+.stundenplan-card {
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 2px solid rgba(0,0,0,0.25);
+  background: #a8d8ea;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.stundenplan-card.active {
+  outline: 2px solid #0060df;
+  z-index: 20;
+}
+
+.stundenplan-card .card-text {
+  flex: 1;
+  overflow-y: auto;
+  padding: 4px 6px;
+  font-size: 1.1em;   /* H1-ish */
+  font-weight: 600;
+  line-height: 1.3;
+  outline: none;
+  word-break: break-word;
+  /* Horizontal + vertical centering */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.stundenplan-card .card-resize-handle {
+  height: 8px;
+  background: rgba(0,0,0,0.15);
+  cursor: ns-resize;
+  flex-shrink: 0;
+}
+
+/* ── Context Menu ────────────────────────────────────────── */
+.stundenplan-context-menu {
+  position: fixed;
+  background: var(--background-primary, #fff);
+  border: 1px solid var(--background-modifier-border, #ccc);
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  z-index: 9999;
+  min-width: 160px;
+  padding: 4px 0;
+}
+
+.stundenplan-context-menu .menu-item {
+  padding: 7px 16px;
+  cursor: pointer;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.stundenplan-context-menu .menu-item:hover {
+  background: var(--background-modifier-hover, #eee);
+}
+.stundenplan-context-menu .menu-separator {
+  height: 1px;
+  background: var(--background-modifier-border, #ddd);
+  margin: 4px 0;
+}
+
+/* Color swatches */
+.stundenplan-color-row {
+  display: flex;
+  gap: 6px;
+  padding: 6px 12px;
+}
+.stundenplan-color-swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.stundenplan-color-swatch:hover,
+.stundenplan-color-swatch.selected {
+  border-color: #0060df;
+}
